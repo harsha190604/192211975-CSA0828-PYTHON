@@ -1,0 +1,5 @@
+subjects = {'Sree': 'Maths', 
+            'Ram': 'Biology', 
+            'Shyam': 'Science', 
+            'Abdul': 'Hindi'} 
+print(subjects['Fharan']) 
