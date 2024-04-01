@@ -1,0 +1,17 @@
+def check_vowel_or_consonant(char):
+    vowels = {'a', 'e', 'i', 'o', 'u'}
+    
+    char_lower = char.lower()
+    if char_lower in vowels:
+        return "Vowel"
+    elif char_lower.isalpha():
+        return "Consonant"
+    else:
+        return "Not a letter"
+
+
+character = input("Enter a character: ")
+result = check_vowel_or_consonant(character)
+print("The character is:", result)
+
+\
