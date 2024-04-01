@@ -1,0 +1,25 @@
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+
+def largest_prime_less_than(n):
+    for number in range(n - 1, 1, -1):
+        if is_prime(number):
+            return number
+    return None
+
+
+given_number = int(input("Enter a number: "))
+largest_prime = largest_prime_less_than(given_number)
+if largest_prime:
+    print("The largest prime number less than", given_number, "is:", largest_prime)
+else:
+    print("There is no prime number less than", given_number)
