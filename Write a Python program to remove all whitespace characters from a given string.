@@ -1,0 +1,6 @@
+def remove_whitespace(text):
+    return text.replace(' ', '')
+
+# Test cases
+print(remove_whitespace("This is a test string"))  
+print(remove_whitespace("Hello, World!"))  
