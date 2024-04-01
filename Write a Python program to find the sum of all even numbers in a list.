@@ -1,0 +1,15 @@
+def sum_of_even_numbers(numbers):
+   
+    total = 0
+   
+    for num in numbers:
+        
+        if num % 2 == 0:
+            
+            total += num
+    return total
+
+
+num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("List:", num_list)
+print("Sum of even numbers in the list:", sum_of_even_numbers(num_list))
