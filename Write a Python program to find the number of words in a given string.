@@ -1,0 +1,3 @@
+str="HARSHA"
+len=len(str)
+print(len)
