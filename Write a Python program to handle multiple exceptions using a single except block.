@@ -1,0 +1,11 @@
+def divide_numbers(a, b):
+    try:
+        result = a / b
+    except (ZeroDivisionError, TypeError) as e:
+        print(f"Error: {e}")
+        print("Please ensure that the divisor is not zero and both numbers are integers or floats.")
+    else:
+        print(f"The result of the division is: {result}")
+
+
+divide_numbers(10, 2) 
