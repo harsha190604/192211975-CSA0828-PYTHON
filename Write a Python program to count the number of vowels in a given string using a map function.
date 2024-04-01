@@ -1,0 +1,14 @@
+def count_vowels_using_map(string):
+    vowels = 'aeiouAEIOU'
+    word_list = string.split()
+
+    def count_vowels(word):
+        return sum(map(word.lower().count, vowels))
+
+    for word in word_list:
+        vowel_count = count_vowels(word)
+        print(f"The word '{word}' contains {vowel_count} vowels.")
+
+# Example usage
+input_string = "Hulkmaniacs are running wild in the whole world"
+count_vowels_using_map(input_string)
