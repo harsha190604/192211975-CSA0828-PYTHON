@@ -1,0 +1,11 @@
+def triangle_area(base, height):
+    return (base * height) / 2
+
+
+base = float(input("Enter the base length of the triangle: "))
+height = float(input("Enter the height of the triangle: "))
+
+if base < 0 or height < 0:
+    print("Please enter positive values for base and height.")
+else:
+    print("The area of the triangle is:", triangle_area(base, height))
