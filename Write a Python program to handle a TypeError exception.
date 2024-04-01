@@ -1,0 +1,6 @@
+my_integer = 1
+my_string = "Hello World"
+if(type(my_integer) != int or type(my_string) != int):
+    print('One of the variables is not an integer')
+else:
+    my_result = my_integer + my_string
