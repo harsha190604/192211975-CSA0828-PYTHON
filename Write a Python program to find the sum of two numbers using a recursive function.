@@ -1,0 +1,12 @@
+def recursive_sum(a, b):
+    if b == 0:
+        return a
+    else:
+        return recursive_sum(a + 1, b - 1)
+
+# Example usage
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+result = recursive_sum(num1, num2)
+print(f"The sum of {num1} and {num2} using recursion is: {result}")
