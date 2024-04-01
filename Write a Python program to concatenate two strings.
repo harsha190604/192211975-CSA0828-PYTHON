@@ -1,0 +1,4 @@
+string1="harsha"
+string2="vardhan"
+concatenate_string=string1+string2
+print("concatenate string:", concatenate_string)
