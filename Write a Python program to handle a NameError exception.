@@ -1,0 +1,4 @@
+try:
+    print(undefined_variable)  
+except NameError:
+    print("Oops! You tried to use a variable that is not defined.")
