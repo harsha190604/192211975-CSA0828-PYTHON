@@ -1,0 +1,7 @@
+import os
+
+try:
+    os.remove('C:/workspace/python/data.txt')
+    print('The file is removed.')
+except FileNotFoundError:
+    print('The file is not present.')
